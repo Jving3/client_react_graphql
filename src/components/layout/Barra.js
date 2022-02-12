@@ -13,10 +13,13 @@ const Barra = () => {
                     <NavLink className= {({isActive}) => (isActive ? "active" : "btn btn-blank cerrar-sesion")} to="/">Inicio</NavLink>  
                 </li>
                 <li>
+                     <NavLink className= {({isActive}) => (isActive ? "active" : "btn btn-blank cerrar-sesion")} to="/proyectos">Proyectos</NavLink>  
+                </li>
+                <li>
                     <NavLink className= {({isActive}) => (isActive ? "active" : "btn btn-blank cerrar-sesion")} to="/produccion">Producción</NavLink>  
                 </li>
                 <li>
-                     <NavLink className= {({isActive}) => (isActive ? "active" : "btn btn-blank cerrar-sesion")} to="/proyectos">Proyectos</NavLink>  
+                     <NavLink className= {({isActive}) => (isActive ? "active" : "btn btn-blank cerrar-sesion")} to="/autostore">AutoStore</NavLink>  
                 </li>
                 
             </ul>

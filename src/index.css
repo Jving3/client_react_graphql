@@ -206,67 +206,14 @@ aside  {
   padding: 4rem;
 }
 
-
-
 .listado-tareas {
   max-width: 600px;
   margin: 0 auto;
 }
 
-
-
-.question {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 900px;
-  height: 400px;
-}
-
-
-
-.produccion-total {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; 
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  margin-right: 20rem;
-  gap: 5rem;
-}
 .produccion-total p {
   font-family: var(--headingFont);
   font-size: 3rem;
-  font-weight: lighter;
-  margin: 0 0 4rem 0;
-  text-align: center;
-  color: var(--gris2);
-}
-
-.tarea {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--gris1);  
-  padding: .5rem 2rem;
-  align-items: center;
-  margin-bottom: 1rem;
-  border-radius: .5rem;
-}
-
-
-.produccion-dia {
-  display: flex;
-  justify-content: center;
-  width: 50rem;
-  height: 400px;
-  margin-bottom: 1rem;
-  margin-left: 5rem;
-}
-
-.produccion-dia ul li {
-  font-family: var(--headingFont);
-  font-size: 2rem;
   font-weight: lighter;
   margin: 0 0 4rem 0;
   text-align: center;
@@ -432,6 +379,7 @@ aside  {
   text-align: center;
   width: 100%;
 }
+
 @media (min-width:768px) {
   .alerta {
       width: auto;
@@ -450,11 +398,6 @@ aside  {
   color: var(--blanco);
 }
 
-.question-container {
-  width: 95%;
-  height: 90%;
-}
-
 .produccion-total{
   display: flex;
   justify-content: flex-end;
@@ -464,3 +407,68 @@ aside  {
   margin-right: 10rem;
   gap: 5rem;
 }
+
+/** PRODUCCION **/
+
+.produccion-total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 20rem;
+  gap: 5rem;
+}
+
+.tarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gris1);  
+  padding: .5rem 2rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+}
+
+.produccion-dia {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  height: 400px;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+}
+
+.produccion-dia ul li {
+  font-family: var(--headingFont);
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 0 0 4rem 0;
+  text-align: center;
+  color: var(--gris2);
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 400px;
+}
+
+.question-container {
+  width: 95%;
+  height: 90%;
+}
+
+
+/** AUTOSTORE **/
+
+.contenedor-evento {
+  padding: 4rem;
+  overflow: auto;
+  height: 60rem;
+  width: max-content;
+}
+

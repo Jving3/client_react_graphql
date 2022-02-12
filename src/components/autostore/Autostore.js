@@ -4,7 +4,7 @@ import { gql, useQuery } from '@apollo/client';
 import Barra from '../layout/Barra';
 import '../../index.css';
 
-const OBTENER_PRODUCCION = gql`
+const OBTENER_AUTOSTORE = gql`
 query{
     obtenerUsuario {
       nombre
@@ -14,7 +14,7 @@ query{
 
 const AutoStore = () => {
 
-    const {data, loading, error, startPolling, stopPolling} = useQuery(OBTENER_PRODUCCION);
+    const {data, loading, error, startPolling, stopPolling} = useQuery(OBTENER_AUTOSTORE);
 
   useEffect(() => {
       startPolling(1000);
@@ -32,6 +32,7 @@ const AutoStore = () => {
 
     const {obtenerUsuario} = data;
     console.log(obtenerUsuario);
+
 
 
     return ( 
